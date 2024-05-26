@@ -26,7 +26,7 @@ object Settings {
   val common = Seq(
     scalaVersion := "2.13.7",
     crossScalaVersions := Seq(scalaVersion.value, "2.12.15"),
-    organization := "me.maciejb.snappyflows",
+    organization := "org.squbs.snappyflows",
     description := "Snappy compression Akka Streams flows",
     homepage := Some(url("https://github.com/maciej/snappy-flows")),
     startYear := Some(2015),
