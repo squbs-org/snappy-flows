@@ -1,4 +1,3 @@
-import bintray.BintrayKeys._
 import com.jsuereth.sbtpgp.PgpKeys
 import sbt.Keys._
 import sbt._
@@ -35,7 +34,6 @@ object Settings {
 
   val release = Seq(
     isSnapshot := (isSnapshot or version(_ endsWith "-SNAPSHOT")).value,
-    bintrayOrganization := Some("maciej"),
     pomIncludeRepository := { _ => false },
     publishMavenStyle := true,
     publishArtifact in Test := false,
